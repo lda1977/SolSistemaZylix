@@ -21,5 +21,17 @@ namespace SistemaZylix
         {
 
         }
+
+        private void msOpenCloseForm_Click(object sender, EventArgs e)
+        {
+            /* Metodo para fechar o formulario */
+            Close();
+        }
+
+        private void Close_ButtonClick(object sender, EventArgs e)
+        {
+            /* Metodo para fechar o formulario */
+            Close();
+        }
     }
 }

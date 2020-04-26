@@ -50,6 +50,7 @@
             this.toolStripSplitButton6 = new System.Windows.Forms.ToolStripSplitButton();
             this.toolStripSplitButton7 = new System.Windows.Forms.ToolStripSplitButton();
             this.toolStripSplitButton8 = new System.Windows.Forms.ToolStripSplitButton();
+            this.Close = new System.Windows.Forms.ToolStripSplitButton();
             this.panel1.SuspendLayout();
             this.msMainMenu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -61,7 +62,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 25);
+            this.panel1.Size = new System.Drawing.Size(776, 25);
             this.panel1.TabIndex = 0;
             // 
             // msMainMenu
@@ -70,7 +71,7 @@
             this.msOpenForms});
             this.msMainMenu.Location = new System.Drawing.Point(0, 0);
             this.msMainMenu.Name = "msMainMenu";
-            this.msMainMenu.Size = new System.Drawing.Size(800, 24);
+            this.msMainMenu.Size = new System.Drawing.Size(776, 24);
             this.msMainMenu.TabIndex = 0;
             this.msMainMenu.Text = "menuStrip1";
             // 
@@ -96,6 +97,7 @@
             this.msOpenAccuMateFrom.Name = "msOpenAccuMateFrom";
             this.msOpenAccuMateFrom.Size = new System.Drawing.Size(188, 22);
             this.msOpenAccuMateFrom.Text = "AccuMate Config File";
+            this.msOpenAccuMateFrom.ToolTipText = "Launches a news Documents";
             // 
             // msOpenSep01
             // 
@@ -108,6 +110,7 @@
             this.msOpenReportForm.Name = "msOpenReportForm";
             this.msOpenReportForm.Size = new System.Drawing.Size(188, 22);
             this.msOpenReportForm.Text = "Report Configuration";
+            this.msOpenReportForm.ToolTipText = "Launch configurable report editor to create custom reports";
             // 
             // msOpenTransForm
             // 
@@ -115,6 +118,7 @@
             this.msOpenTransForm.Name = "msOpenTransForm";
             this.msOpenTransForm.Size = new System.Drawing.Size(188, 22);
             this.msOpenTransForm.Text = "Translation";
+            this.msOpenTransForm.ToolTipText = "Launch tool to aid in creating language translations";
             // 
             // msOpenSep02
             // 
@@ -134,6 +138,8 @@
             this.msOpenDriverForm.Name = "msOpenDriverForm";
             this.msOpenDriverForm.Size = new System.Drawing.Size(188, 22);
             this.msOpenDriverForm.Text = "Driver Database";
+            this.msOpenDriverForm.ToolTipText = "Open the Database editor to allow entry of a list of driver IDs for user with ID " +
+    "card validation";
             // 
             // msOpenSep03
             // 
@@ -146,6 +152,8 @@
             this.msOpenCloseForm.Name = "msOpenCloseForm";
             this.msOpenCloseForm.Size = new System.Drawing.Size(188, 22);
             this.msOpenCloseForm.Text = "Exit";
+            this.msOpenCloseForm.ToolTipText = "Fechar - Exit- Close";
+            this.msOpenCloseForm.Click += new System.EventHandler(this.msOpenCloseForm_Click);
             // 
             // statusStrip1
             // 
@@ -159,10 +167,11 @@
             this.toolStripSplitButton5,
             this.toolStripSplitButton6,
             this.toolStripSplitButton7,
-            this.toolStripSplitButton8});
+            this.toolStripSplitButton8,
+            this.Close});
             this.statusStrip1.Location = new System.Drawing.Point(0, 25);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 71);
+            this.statusStrip1.Size = new System.Drawing.Size(776, 71);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
@@ -175,6 +184,7 @@
             this.toolStripSplitButton1.Name = "toolStripSplitButton1";
             this.toolStripSplitButton1.Size = new System.Drawing.Size(81, 69);
             this.toolStripSplitButton1.Text = "toolStripSplitButton1";
+            this.toolStripSplitButton1.ToolTipText = "Abrir arquivos - Open Files";
             // 
             // toolStripSplitButton2
             // 
@@ -184,6 +194,7 @@
             this.toolStripSplitButton2.Name = "toolStripSplitButton2";
             this.toolStripSplitButton2.Size = new System.Drawing.Size(81, 69);
             this.toolStripSplitButton2.Text = "toolStripSplitButton2";
+            this.toolStripSplitButton2.ToolTipText = "Copiar - Copy";
             // 
             // toolStripSplitButton3
             // 
@@ -193,6 +204,7 @@
             this.toolStripSplitButton3.Name = "toolStripSplitButton3";
             this.toolStripSplitButton3.Size = new System.Drawing.Size(81, 69);
             this.toolStripSplitButton3.Text = "toolStripSplitButton3";
+            this.toolStripSplitButton3.ToolTipText = "Colar - Cut";
             // 
             // toolStripSplitButton4
             // 
@@ -202,6 +214,7 @@
             this.toolStripSplitButton4.Name = "toolStripSplitButton4";
             this.toolStripSplitButton4.Size = new System.Drawing.Size(81, 69);
             this.toolStripSplitButton4.Text = "toolStripSplitButton4";
+            this.toolStripSplitButton4.ToolTipText = "Documents";
             // 
             // toolStripSplitButton5
             // 
@@ -211,6 +224,7 @@
             this.toolStripSplitButton5.Name = "toolStripSplitButton5";
             this.toolStripSplitButton5.Size = new System.Drawing.Size(81, 69);
             this.toolStripSplitButton5.Text = "toolStripSplitButton5";
+            this.toolStripSplitButton5.ToolTipText = "Configure Document Options for AccuMate";
             // 
             // toolStripSplitButton6
             // 
@@ -220,6 +234,7 @@
             this.toolStripSplitButton6.Name = "toolStripSplitButton6";
             this.toolStripSplitButton6.Size = new System.Drawing.Size(81, 69);
             this.toolStripSplitButton6.Text = "toolStripSplitButton6";
+            this.toolStripSplitButton6.ToolTipText = "Gerar Relatório";
             // 
             // toolStripSplitButton7
             // 
@@ -229,6 +244,7 @@
             this.toolStripSplitButton7.Name = "toolStripSplitButton7";
             this.toolStripSplitButton7.Size = new System.Drawing.Size(81, 69);
             this.toolStripSplitButton7.Text = "toolStripSplitButton7";
+            this.toolStripSplitButton7.ToolTipText = "Retry communications with AccuLoad";
             // 
             // toolStripSplitButton8
             // 
@@ -238,16 +254,28 @@
             this.toolStripSplitButton8.Name = "toolStripSplitButton8";
             this.toolStripSplitButton8.Size = new System.Drawing.Size(81, 69);
             this.toolStripSplitButton8.Text = "toolStripSplitButton8";
+            this.toolStripSplitButton8.ToolTipText = "Pull non-reseltable totalizer values";
+            // 
+            // Close
+            // 
+            this.Close.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Close.Image = ((System.Drawing.Image)(resources.GetObject("Close.Image")));
+            this.Close.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Close.Name = "Close";
+            this.Close.Size = new System.Drawing.Size(81, 69);
+            this.Close.Text = "Fechar - Close - Exit";
+            this.Close.ButtonClick += new System.EventHandler(this.Close_ButtonClick);
             // 
             // FrmMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(776, 453);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.msMainMenu;
             this.Name = "FrmMainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -283,5 +311,6 @@
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton6;
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton7;
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton8;
+        private System.Windows.Forms.ToolStripSplitButton Close;
     }
 }

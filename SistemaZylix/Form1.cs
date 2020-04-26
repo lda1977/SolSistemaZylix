@@ -27,14 +27,11 @@ namespace SistemaZylix
             }
             else 
             {
-                /* A hora que estiver cheio o progressBar1 então finaliza a application */
-                Application.Exit();
-                /*
+                /* A hora que estiver cheio o progressBar1 então chama a application FrmMainForm */
                 timer1.Enabled = false;
                 FrmMainForm _objtfrm = new FrmMainForm();
                 _objtfrm.Show();
                 this.Visible = false;
-                */
             } /* Fim if */
         }
     }
