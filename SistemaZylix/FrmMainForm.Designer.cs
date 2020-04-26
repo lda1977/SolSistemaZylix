@@ -51,6 +51,7 @@
             this.toolStripSplitButton7 = new System.Windows.Forms.ToolStripSplitButton();
             this.toolStripSplitButton8 = new System.Windows.Forms.ToolStripSplitButton();
             this.Close = new System.Windows.Forms.ToolStripSplitButton();
+            this.pnlBaseForm = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.msMainMenu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -98,6 +99,7 @@
             this.msOpenAccuMateFrom.Size = new System.Drawing.Size(188, 22);
             this.msOpenAccuMateFrom.Text = "AccuMate Config File";
             this.msOpenAccuMateFrom.ToolTipText = "Launches a news Documents";
+            this.msOpenAccuMateFrom.Click += new System.EventHandler(this.msOpenAccuMateFrom_Click);
             // 
             // msOpenSep01
             // 
@@ -111,6 +113,7 @@
             this.msOpenReportForm.Size = new System.Drawing.Size(188, 22);
             this.msOpenReportForm.Text = "Report Configuration";
             this.msOpenReportForm.ToolTipText = "Launch configurable report editor to create custom reports";
+            this.msOpenReportForm.Click += new System.EventHandler(this.msOpenReportForm_Click);
             // 
             // msOpenTransForm
             // 
@@ -119,6 +122,7 @@
             this.msOpenTransForm.Size = new System.Drawing.Size(188, 22);
             this.msOpenTransForm.Text = "Translation";
             this.msOpenTransForm.ToolTipText = "Launch tool to aid in creating language translations";
+            this.msOpenTransForm.Click += new System.EventHandler(this.msOpenTransForm_Click);
             // 
             // msOpenSep02
             // 
@@ -131,6 +135,7 @@
             this.msOpenEqForm.Name = "msOpenEqForm";
             this.msOpenEqForm.Size = new System.Drawing.Size(188, 22);
             this.msOpenEqForm.Text = "Equation Set";
+            this.msOpenEqForm.Click += new System.EventHandler(this.msOpenEqForm_Click);
             // 
             // msOpenDriverForm
             // 
@@ -140,6 +145,7 @@
             this.msOpenDriverForm.Text = "Driver Database";
             this.msOpenDriverForm.ToolTipText = "Open the Database editor to allow entry of a list of driver IDs for user with ID " +
     "card validation";
+            this.msOpenDriverForm.Click += new System.EventHandler(this.msOpenDriverForm_Click);
             // 
             // msOpenSep03
             // 
@@ -266,17 +272,28 @@
             this.Close.Text = "Fechar - Close - Exit";
             this.Close.ButtonClick += new System.EventHandler(this.Close_ButtonClick);
             // 
+            // pnlBaseForm
+            // 
+            this.pnlBaseForm.BackColor = System.Drawing.Color.Silver;
+            this.pnlBaseForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBaseForm.Location = new System.Drawing.Point(0, 96);
+            this.pnlBaseForm.Name = "pnlBaseForm";
+            this.pnlBaseForm.Size = new System.Drawing.Size(776, 357);
+            this.pnlBaseForm.TabIndex = 2;
+            // 
             // FrmMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 453);
+            this.Controls.Add(this.pnlBaseForm);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.msMainMenu;
             this.Name = "FrmMainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.msMainMenu.ResumeLayout(false);
@@ -312,5 +329,6 @@
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton7;
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton8;
         private System.Windows.Forms.ToolStripSplitButton Close;
+        private System.Windows.Forms.Panel pnlBaseForm;
     }
 }
