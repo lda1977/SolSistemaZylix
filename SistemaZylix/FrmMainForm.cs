@@ -110,5 +110,12 @@ namespace SistemaZylix
             pnlBaseForm.Controls.Add(_objForm);
             _objForm.Show();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            /* Configurando hora e data pelo sistema para aparecer na barra de status */
+            toolStripStatusLabel2.Text = DateTime.Now.ToShortDateString();
+            toolStripStatusLabel3.Text = DateTime.Now.ToShortTimeString();
+        }
     }
 }

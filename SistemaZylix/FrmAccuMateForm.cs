@@ -22,5 +22,21 @@ namespace SistemaZylix
             /* Fechando o form AccuMate */
             Close();
         }
+
+        private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            /* Trabalhando com árvore(raiz) e suas folhas(nós) */
+            /* para imprimir no lado direito (RichTexBox1) */
+            if (e.Node.Name == "Raiz1")
+            {
+                richTextBox1.Text = "ID";
+            }
+            else 
+            {
+                if (e.Node.Name == "Nó-000") {
+                    richTextBox1.Text = "ID = 001";
+                }
+            }/* Fim do primeiro if */
+        }
     }
 }

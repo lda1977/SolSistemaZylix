@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.msMainMenu = new System.Windows.Forms.MenuStrip();
@@ -52,9 +53,16 @@
             this.toolStripSplitButton8 = new System.Windows.Forms.ToolStripSplitButton();
             this.Close = new System.Windows.Forms.ToolStripSplitButton();
             this.pnlBaseForm = new System.Windows.Forms.Panel();
+            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.msMainMenu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.pnlBaseForm.SuspendLayout();
+            this.statusStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -275,11 +283,53 @@
             // pnlBaseForm
             // 
             this.pnlBaseForm.BackColor = System.Drawing.Color.Silver;
+            this.pnlBaseForm.Controls.Add(this.statusStrip2);
             this.pnlBaseForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBaseForm.Location = new System.Drawing.Point(0, 96);
             this.pnlBaseForm.Name = "pnlBaseForm";
             this.pnlBaseForm.Size = new System.Drawing.Size(776, 357);
             this.pnlBaseForm.TabIndex = 2;
+            // 
+            // statusStrip2
+            // 
+            this.statusStrip2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.statusStrip2.Dock = System.Windows.Forms.DockStyle.None;
+            this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel2,
+            this.toolStripStatusLabel3});
+            this.statusStrip2.Location = new System.Drawing.Point(0, 335);
+            this.statusStrip2.Name = "statusStrip2";
+            this.statusStrip2.Size = new System.Drawing.Size(410, 22);
+            this.statusStrip2.TabIndex = 0;
+            this.statusStrip2.Text = "statusStrip2";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(157, 17);
+            this.toolStripStatusLabel1.Text = "Bem vindo ao Systema Zyliz ";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel3.Text = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FrmMainForm
             // 
@@ -300,6 +350,10 @@
             this.msMainMenu.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.pnlBaseForm.ResumeLayout(false);
+            this.pnlBaseForm.PerformLayout();
+            this.statusStrip2.ResumeLayout(false);
+            this.statusStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,5 +384,10 @@
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton8;
         private System.Windows.Forms.ToolStripSplitButton Close;
         private System.Windows.Forms.Panel pnlBaseForm;
+        private System.Windows.Forms.StatusStrip statusStrip2;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.Timer timer1;
     }
 }
