@@ -199,6 +199,7 @@
             this.toolStripSplitButton1.Size = new System.Drawing.Size(81, 69);
             this.toolStripSplitButton1.Text = "toolStripSplitButton1";
             this.toolStripSplitButton1.ToolTipText = "Abrir arquivos - Open Files";
+            this.toolStripSplitButton1.ButtonClick += new System.EventHandler(this.toolStripSplitButton1_ButtonClick);
             // 
             // toolStripSplitButton2
             // 

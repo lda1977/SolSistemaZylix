@@ -86,6 +86,12 @@
     <Compile Include="FrmAccuMateForm.Designer.cs">
       <DependentUpon>FrmAccuMateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmArquivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArquivo.Designer.cs">
+      <DependentUpon>FrmArquivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDriverForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     <EmbeddedResource Include="FrmAccuMateForm.resx">
       <DependentUpon>FrmAccuMateForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmArquivo.resx">
+      <DependentUpon>FrmArquivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDriverForm.resx">
       <DependentUpon>FrmDriverForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +157,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

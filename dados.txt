@@ -1,0 +1,3 @@
+001|Number Of Laod Arms|6|
+002|Arm 1 Configuration|Straight|
+003|Arm 1 Number Of Products|1|Blending

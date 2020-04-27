@@ -26,7 +26,7 @@ namespace SistemaZylix
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
             /* Trabalhando com árvore(raiz) e suas folhas(nós) */
-            /* para imprimir no lado direito (RichTexBox1) */
+            /* para imprimir no lado direito (RichTextBox1) */
             if (e.Node.Name == "Raiz1")
             {
                 richTextBox1.Text = "ID";
@@ -37,6 +37,11 @@ namespace SistemaZylix
                     richTextBox1.Text = "ID = 001";
                 }
             }/* Fim do primeiro if */
+        }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
         }
     }
 }
